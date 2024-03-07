@@ -1,4 +1,4 @@
-# Icon Items
+# Icons Mod
 This mod adds icons and logos from various websites and projects in item form into the game.
 ~~There's also some bribery item~~
 These are all the icon items in a (messy) dropped form
