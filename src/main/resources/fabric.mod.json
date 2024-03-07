@@ -1,43 +1,40 @@
 {
 	"schemaVersion": 1,
-	"id": "iconitems",
+	"id": "iconsmod",
 	"version": "${version}",
-	"name": "Icon Items",
-	"description": "This mod adds various icons from various projects as items in-game. These include: CRSS, DRSS, Minecraft Bedrock Edition, CurseForge, Devin's pfp, GitHub's logo, Modrinth's logo, Minecraft Java Edition, Pridecraft's favicon logo, TheClashFruit's icon, and many more™",
+	"name": "Icons Mod",
+	"description": "This mod adds various icons from various projects as items in-game. These include: CRSS, DRSS, Minecraft Bedrock Edition, CurseForge, Devin's pfp, GitHub's logo, Modrinth's logo, Minecraft Java Edition, Pridecraft's favicon logo, TheClashFruit's icon, CustardMC's logo, NineMinecraft's logo, YouTube's logo, Google's logo, and many more™",
 	"authors": [
-		"Blurryface"
-	],
-	"contributors": [
-		"TheClashFruit"
+		"CustardMC"
 	],
 	"contact": {
 		"homepage": "https://blurryface.xyz/",
 		"sources": "https://github.com/blryface/icon-items"
 	},
 	"license": "CC BY-NC-SA 4.0",
-	"icon": "assets/iconitems/icon.png",
+	"icon": "assets/iconsmod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"xyz.blurryface.iconitems.Iconitems"
+			"xyz.blurryface.iconsmod.IconsMod"
 		],
 		"client": [
-			"xyz.blurryface.iconitems.IconitemsClient"
+			"xyz.blurryface.iconsmod.IconsModClient"
 		],
 		"fabric-datagen": [
-			"xyz.blurryface.iconitems.datagen.IconitemsDataGen"
+			"xyz.blurryface.iconsmod.datagen.IconsModDataGen"
 		]
 	},
 	"mixins": [
-		"iconitems.mixins.json",
+		"iconsmod.mixins.json",
 		{
-			"config": "iconitems.client.mixins.json",
+			"config": "iconsmod.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.14.24",
-		"minecraft": "~1.20.2",
+		"fabricloader": ">=0.14.00",
+		"minecraft": ">=1.20",
 		"java": ">=17",
 		"fabric-api": "*"
 	}
